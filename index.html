@@ -8,40 +8,141 @@
 <body>
     <h1>Лабораторная работа №5</h1>
     <p>Это моя первая HTML-страница, созданная в рамках изучения основ веб-разметки.</p>
-    
+    <h2>Примеры тегов</h2>
+    <p>Это пример парного тега: <strong>жирный текст</strong></p>
+    <p>Это пример одиночного тега:<br>перенос строки</p>
+    <hr>
     <h2>Базовые HTML-теги</h2>
     
     <h3>Заголовки</h3>
     <h1>Заголовок H1</h1>
     <h2>Заголовок H2</h2>
     <h3>Заголовок H3</h3>
+    <h4>Заголовок H4</h4>
+    <h5>Заголовок H5</h5>
+    <h6>Заголовок H6</h6>
     
-    <h3>Форматирование</h3>
-    <p>Это <strong>жирный</strong> текст.</p>
-    <p>Это <em>курсив</em> текст.</p>
-    <p><strong><em>Жирный курсив</em></strong></p>
-    <hr>
+    <h3>Абзацы и форматирование</h3>
+    <p>Это обычный абзац текста.</p>
+    <p>Это <strong>очень важная</strong> фраза с жирным выделением.</p>
+    <p>Это <em>курсивный</em> текст с акцентом.</p>
+    <p><strong><em>Жирный курсив</em></strong> — комбинированное выделение.</p>
+    <p>Первая строка<br>Вторая строка после переноса</p>
     <hr>
     
-    <!-- Списки в HTML (Практическое задание 9) -->
+    <h3>Ссылки</h3>
+    <p><a href="https://google.com">Перейти на Google</a></p>
+    <p><a href="https://github.com" target="_blank">Мой GitHub (открывается в новой вкладке)</a></p>
+    
+    <h3>Изображения</h3>
+    <p><img src="img/gitPushLab5_Nazarenko.png" alt="Скриншот Git push" width="300"></p>
+    <p><img src="https://via.placeholder.com/150" alt="Пример изображения с интернета" width="150"></p>
+    <p><img src="#" alt="Заглушка"></p>
+    
+    <hr>
+    <h2>Атрибуты HTML</h2>
+    
+    <p id="main-text" class="highlighted" title="Это всплывающая подсказка">
+        Этот абзац содержит id, class и title. Наведи на меня курсор.
+    </p>
+    
+    <p>
+        <a href="https://example.com" target="_blank" title="Откроется в новой вкладке">
+            Кликни меня (ссылка с подсказкой)
+        </a>
+    </p>
+    
+    <p><img src="https://via.placeholder.com/200" alt="Пример изображения" width="200"></p>
+    
+    <p><button title="Нажми на меня">Кнопка</button></p>
+    
+    <p>
+        <label for="city">Введите ваш город:</label>
+        <input id="city" type="text" placeholder="Введите ваш город">
+    </p>
+    
+    <hr>
+    <h2>Галерея</h2>
+    
+    <p><img src="https://via.placeholder.com/150/0000ff/ffffff" alt="Синий квадрат" width="150"></p>
+    <p><img src="img/gitPushLab5_Nazarenko.png" alt="Локальное изображение" width="150"></p>
+    <p><img src="#" alt="Заглушка" width="150"></p>
+    
+    <hr>
+    <h2>Информация обо мне</h2>
+    
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Категория</th>
+            <th>Информация</th>
+        </tr>
+        <tr>
+            <td>ФИО</td>
+            <td>Назаренко Анна Сергеевна</td>
+        </tr>
+        <tr>
+            <td>Группа</td>
+            <td>ИС-232</td>
+        </tr>
+        <tr>
+            <td>Любимый язык программирования</td>
+            <td>JavaScript</td>
+        </tr>
+        <tr>
+            <td>Город</td>
+            <td>Москва</td>
+        </tr>
+    </table>
+    
+    <hr>
+    <h2>Пример HTML-формы</h2>
+    
+    <form>
+        <label for="username">Имя:</label>
+        <input id="username" type="text" placeholder="Введите имя">
+        <br><br>
+        
+        <label for="email">Email:</label>
+        <input id="email" type="email" placeholder="example@mail.com">
+        <br><br>
+        
+        <label for="city-select">Город:</label>
+        <select id="city-select">
+            <option>Москва</option>
+            <option>Санкт-Петербург</option>
+            <option>Казань</option>
+            <option>Новосибирск</option>
+        </select>
+        <br><br>
+        
+        <label for="message">Сообщение:</label>
+        <textarea id="message" rows="4" placeholder="Напишите текст..."></textarea>
+        <br><br>
+        
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
+    
+    <hr>
+    <footer>
+        <p> 2025 | Назаренко Анна Сергеевна | ИС-232</p>
+    </footer>
+     <hr>
+    
+    
     <h2>Списки в HTML</h2>
     
     <h3>Нумерованный список (мои любимые фильмы)</h3>
     <ol>
-        <li>Властелин колец: Братство кольца</li>
         <li>Начало</li>
         <li>Матрица</li>
         <li>Интерстеллар</li>
-        <li>Зеленая миля</li>
     </ol>
     
     <h3>Маркированный список (мои хобби)</h3>
     <ul>
-        <li>Чтение книг</li>
-        <li>Программирование</li>
         <li>Фотография</li>
         <li>Путешествия</li>
-        <li>Йога</li>
     </ul>
     
     <h3>Вложенный список</h3>
@@ -73,56 +174,131 @@
             </ul>
         </li>
     </ul>
-
+    <h2>Атрибуты HTML</h2>
+    
+    <h3>Глобальные атрибуты</h3>
+    <p id="intro" class="highlight big-text" title="Это всплывающая подсказка">
+        Этот абзац содержит id="intro", class="highlight big-text" и title="Это всплывающая подсказка".
+        Наведи на меня курсор, чтобы увидеть подсказку.
+    </p>
+    
+    <h3>Специальные атрибуты</h3>
+    
+    <p><strong>href и target:</strong></p>
+    <p>
+        <a href="https://google.com" target="_blank" title="Открывается в новой вкладке">
+            Google (открывается в новой вкладке)
+        </a>
+    </p>
+    <p>
+        <a href="https://yandex.ru" target="_self" title="Открывается в этой же вкладке">
+            Яндекс (открывается в этой же вкладке)
+        </a>
+    </p>
+    
+    <p><strong>src, alt, width:</strong></p>
+    <p>
+        <img src="https://via.placeholder.com/200/ff0000/ffffff" 
+             alt="Красный квадрат" 
+             width="200" 
+             title="Пример изображения с атрибутами">
+    </p>
+    <p>
+        <img src="img/gitPushLab5_Nazarenko.png" 
+             alt="Скриншот Git push" 
+             width="250">
+    </p>
+    
+    <p><strong>placeholder (подсказка в поле ввода):</strong></p>
+    <p>
+        <label for="city-input">Ваш город:</label>
+        <input id="city-input" type="text" placeholder="Введите ваш город">
+    </p>
+    
+    <p><strong>type (тип поля ввода):</strong></p>
+    <p>
+        Текст: <input type="text" placeholder="Текст"><br>
+        Число: <input type="number" placeholder="Число"><br>
+        Email: <input type="email" placeholder="Email"><br>
+        Пароль: <input type="password" placeholder="Пароль"><br>
+        Телефон: <input type="tel" placeholder="Телефон"><br>
+        Дата: <input type="date"><br>
+        Цвет: <input type="color"><br>
+        Флажок: <input type="checkbox"> Согласен<br>
+        Радио: <input type="radio" name="radio"> Вариант 1<br>
+        Файл: <input type="file"><br>
+    </p>
+    
+    <p><strong>button с атрибутом title:</strong></p>
+    <p>
+        <button title="Нажми на меня, чтобы отправить форму">Отправить</button>
+        <button title="Очистить все поля">Очистить</button>
+    </p>
+    
+    <p><strong>Атрибут style (встроенные стили):</strong></p>
+    <p style="color: blue; font-size: 18px; font-weight: bold;">
+        Этот текст синего цвета, размером 18px и жирный (стиль задан атрибутом style).
+    </p>
+    <p style="background-color: yellow; padding: 10px; border: 1px solid black;">
+        Этот абзац с желтым фоном, отступами и рамкой.
+    </p>
+      <hr>
+    <h2>Галерея</h2>
+    <h3>Изображение из интернета</h3>
+    <img src="https://via.placeholder.com/300/ff0000/ffffff" alt="Красный квадрат" width="200">
+    <h3>Локальное изображение</h3>
+    <img src="img/gitPushLab5_Nazarenko.png" alt="Скриншот Git push" width="200">
+    <h3>Изображение с заглушкой</h3>
+    <img src="#" alt="Заглушка" width="200">
+ <hr>
+   
+    <h2>Информация обо мне</h2>
+    
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Категория</th>
+            <th>Информация</th>
+        </tr>
+        <tr>
+            <td>ФИО</td>
+            <td>Назаренко Анна Сергеевна</td>
+        </tr>
+        <tr>
+            <td>Группа</td>
+            <td>ИС-232</td>
+        </tr>
+        <tr>
+            <td>Любимый язык программирования</td>
+            <td>С#</td>
+        </tr>
+        <tr>
+            <td>Город</td>
+            <td>Волжский</td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Пример HTML-формы</h2>
+    <form>
+        <label for="username">Имя:</label>
+        <input type="text" id="username" placeholder="Введите имя">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="example@mail.com">
+        <br><br>
+        <label for="city">Город:</label>
+        <select id="city">
+            <option value="moscow">Москва</option>
+            <option value="spb">Санкт-Петербург</option>
+            <option value="kazan">Казань</option>
+            <option value="novosibirsk">Новосибирск</option>
+        </select>
+        <br><br>
+        <label for="message">Сообщение:</label>
+        <textarea id="message" rows="4" cols="40" placeholder="Напишите текст..."></textarea>
+        <br><br>
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+    </form>
 </body>
 </html>
-<hr>
-<h2>Атрибуты HTML-элементов</h2>
 
-<p id="test-para" class="test-class" title="Тестовая подсказка">
-    Этот абзац имеет атрибуты id, class и title.
-</p>
-
-<p>
-    <a href="https://github.com" target="_blank" title="Открыть GitHub">
-        Ссылка с атрибутами href, target и title
-    </a>
-</p>
-
-<p>
-    <img src="img/gitPushLab5_Nazarenko.png" alt="Скриншот" width="200">
-</p>
-
-<p>
-    <button title="Кнопка">Кнопка с title</button>
-</p>
-
-<p>
-    <input type="text" placeholder="Введите текст">
-</p>
-
-    <hr>
-    <h2>Галерея</h2>
-    <img src='https://via.placeholder.com/200' alt='тест' width='200'>
-<!-- Таблица -->
-<hr>
-<h2>Информация обо мне</h2>
-
-<table border="1">
-    <tr>
-        <th>Категория</th>
-        <th>Информация</th>
-    </tr>
-    <tr>
-        <td>ФИО</td>
-        <td>Назаренко Анна Сергеевна</td>
-    </tr>
-    <tr>
-        <td>Группа</td>    <td>ИС-232</td>  </tr>
-    <tr>
-        <td>Язык</td>
-        <td>C#</td>   </tr>
-    <tr>
-        <td>Город</td>
-        <td>Волжский</td>   </tr>
-</table>
