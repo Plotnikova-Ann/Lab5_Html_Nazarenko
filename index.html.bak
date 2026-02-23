@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №5</title>
+</head>
+<body>
+    <h1>Лабораторная работа №5</h1>
+    <p>Это моя первая HTML-страница, созданная в рамках изучения основ веб-разметки.</p>
+    
+    <h2>Базовые HTML-теги</h2>
+    
+    <h3>Заголовки</h3>
+    <h1>Заголовок H1</h1>
+    <h2>Заголовок H2</h2>
+    <h3>Заголовок H3</h3>
+    
+    <h3>Форматирование</h3>
+    <p>Это <strong>жирный</strong> текст.</p>
+    <p>Это <em>курсив</em> текст.</p>
+    <p><strong><em>Жирный курсив</em></strong></p>
+    <hr>
+    <hr>
+    
+    <!-- Списки в HTML (Практическое задание 9) -->
+    <h2>Списки в HTML</h2>
+    
+    <h3>Нумерованный список (мои любимые фильмы)</h3>
+    <ol>
+        <li>Властелин колец: Братство кольца</li>
+        <li>Начало</li>
+        <li>Матрица</li>
+        <li>Интерстеллар</li>
+        <li>Зеленая миля</li>
+    </ol>
+    
+    <h3>Маркированный список (мои хобби)</h3>
+    <ul>
+        <li>Чтение книг</li>
+        <li>Программирование</li>
+        <li>Фотография</li>
+        <li>Путешествия</li>
+        <li>Йога</li>
+    </ul>
+    
+    <h3>Вложенный список</h3>
+    <ul>
+        <li>Фрукты
+            <ul>
+                <li>Яблоки</li>
+                <li>Бананы</li>
+                <li>Апельсины</li>
+            </ul>
+        </li>
+        <li>Овощи
+            <ol>
+                <li>Морковь</li>
+                <li>Картофель</li>
+                <li>Помидоры</li>
+            </ol>
+        </li>
+        <li>Напитки
+            <ul>
+                <li>Чай
+                    <ul>
+                        <li>Зеленый</li>
+                        <li>Черный</li>
+                    </ul>
+                </li>
+                <li>Кофе</li>
+                <li>Сок</li>
+            </ul>
+        </li>
+    </ul>
+
+</body>
+</html>
+<hr>
+<h2>Атрибуты HTML-элементов</h2>
+
+<p id="test-para" class="test-class" title="Тестовая подсказка">
+    Этот абзац имеет атрибуты id, class и title.
+</p>
+
+<p>
+    <a href="https://github.com" target="_blank" title="Открыть GitHub">
+        Ссылка с атрибутами href, target и title
+    </a>
+</p>
+
+<p>
+    <img src="img/gitPushLab5_Nazarenko.png" alt="Скриншот" width="200">
+</p>
+
+<p>
+    <button title="Кнопка">Кнопка с title</button>
+</p>
+
+<p>
+    <input type="text" placeholder="Введите текст">
+</p>
